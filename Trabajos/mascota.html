@@ -1,0 +1,31 @@
+<!DOCTYPE htlm>
+<html lang="es">
+    <head>
+        
+        <meta charset="uft-8">
+        <title>Mundo Canino </title>
+        <center><h1>CALCULA LA EDAD DE TU MASCOTA</h1></center>
+        <br>
+        <center><input type="text" placeholder="Ingrese la edad del perro" id="Edad"></center>
+        <center><input type="button" name="name" value="Ingresar" onclick="calc();"></center>
+  </head>
+  <body bgcolor="#DODODO"> 
+    <script type="text/javascript">
+        function calc()
+        {
+           var Edad=parseInt(document.getElementById('Edad').value);
+           console.log(Edad);
+           var result;
+           result=((16*Math.log(Edad))+31).toFixed(1);
+
+           alert("La edad de la mascota es: " +result +" \Años humanos");
+        }
+    </script>
+        
+        
+
+</body>
+</html>
+        
+        
+    
